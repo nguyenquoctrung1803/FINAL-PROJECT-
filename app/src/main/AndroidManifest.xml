@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sinhvien.orderdrinkapp">
+    package="com.sinhvien.finalproject">
 
     <application
         android:allowBackup="true"
@@ -9,29 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OrderDrinkApp">
-        <activity android:name=".Activities.DetailStatisticActivity"></activity>
-        <activity android:name=".Activities.AddStaffActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.DetailStatisticActivity"></activity>
+        <activity android:name="com.sinhvien.finalproject.Activities.AddStaffActivity" />
         <activity
-            android:name=".Activities.EditTableActivity"
+            android:name="com.sinhvien.finalproject.Activities.EditTableActivity"
             android:label="Sửa bàn ăn"
             android:theme="@style/PopUpActivity" />
-        <activity android:name=".Activities.PaymentActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.PaymentActivity" />
         <activity
-            android:name=".Activities.AmountMenuActivity"
+            android:name="com.sinhvien.finalproject.Activities.AmountMenuActivity"
             android:label="số lượng món"
             android:theme="@style/PopUpActivity" />
-        <activity android:name=".Activities.AddCategoryActivity" />
-        <activity android:name=".Activities.AddMenuActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.AddCategoryActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.AddMenuActivity" />
         <activity
-            android:name=".Activities.AddTableActivity"
+            android:name="com.sinhvien.finalproject.Activities.AddTableActivity"
             android:label="@string/addTable"
             android:theme="@style/PopUpActivity" />
-        <activity android:name=".Activities.HomeActivity" />
-        <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.Register2ndActivity" />
-        <activity android:name=".Activities.WelcomeActivity" />
-        <activity android:name=".Activities.RegisterActivity" />
-        <activity android:name=".Activities.SplashActivity">
+        <activity android:name="com.sinhvien.finalproject.Activities.HomeActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.LoginActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.Register2ndActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.WelcomeActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.RegisterActivity" />
+        <activity android:name="com.sinhvien.finalproject.Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
