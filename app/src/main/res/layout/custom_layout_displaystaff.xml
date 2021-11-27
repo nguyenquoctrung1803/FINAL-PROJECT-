@@ -36,7 +36,7 @@
                 android:id="@+id/txt_customstaff_TenNV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nguyễn Quốc "
+                android:text="Nguyễn Quốc Trung"
                 android:fontFamily="@font/muli_black"
                 android:textSize="24sp"
                 android:textColor="@color/black"
