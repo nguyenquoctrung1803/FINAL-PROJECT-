@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.AddStaffActivity"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/wallper"
     android:paddingTop="20dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
@@ -31,18 +31,18 @@
                 android:padding="5dp"
                 android:layout_centerVertical="true"
                 />
+
             <TextView
                 android:id="@+id/txt_addstaff_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Thêm nhân viên"
-                android:textColor="@color/black"
-                android:fontFamily="@font/muli_black"
-                android:textSize="30sp"
-                android:paddingLeft="15dp"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/img_addstaff_back"
-                />
+                android:fontFamily="@font/muli_black"
+                android:paddingLeft="15dp"
+                android:text="Thêm nhân viên"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
 
         </RelativeLayout>
 

@@ -17,7 +17,7 @@ import com.sinhvien.finalproject.DAO.NhanVienDAO;
 import com.sinhvien.finalproject.R;
 
 public class LoginActivity extends AppCompatActivity {
-    Button BTN_login_DangNhap, BTN_login_DangKy;
+    Button BTN_login_DangNhap, BTN_login_DangKy, BTN_login_QuenMatKhau;
     TextInputLayout TXTL_login_TenDN, TXTL_login_MatKhau;
     NhanVienDAO nhanVienDAO;
 
@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         TXTL_login_TenDN = (TextInputLayout)findViewById(R.id.txtl_login_TenDN);
         TXTL_login_MatKhau = (TextInputLayout)findViewById(R.id.txtl_login_MatKhau);
         BTN_login_DangNhap = (Button)findViewById(R.id.btn_login_DangNhap);
+        BTN_login_QuenMatKhau = (Button)findViewById(R.id.btn_login_quenmatkhau);
         BTN_login_DangKy = (Button)findViewById(R.id.btn_login_DangKy);
 
         nhanVienDAO = new NhanVienDAO(this);    //khởi tạo kết nối csdl
@@ -60,6 +61,15 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(getApplicationContext(),"Đăng nhập thất bại!",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        BTN_login_QuenMatKhau.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), PasswordActivity.class);
+                startActivity(intent);
             }
         });
 

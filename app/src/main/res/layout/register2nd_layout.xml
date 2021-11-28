@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.Register2ndActivity"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/wallper"
     android:padding="30dp"
     >
 

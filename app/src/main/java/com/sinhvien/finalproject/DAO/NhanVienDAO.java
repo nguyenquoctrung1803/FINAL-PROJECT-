@@ -63,6 +63,32 @@ public class NhanVienDAO {
         return manv;
     }
 
+    public int checkUser(String tenDN) {
+        String query = "SELECT * FROM " +CreateDatabase.TBL_NHANVIEN+ " WHERE "
+                +CreateDatabase.TBL_NHANVIEN_TENDN +" = '"+ tenDN+"";
+        int usernv = 0;
+        Cursor cursor = database.rawQuery(query,null);
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()) {
+            usernv = cursor.getInt(cursor.getColumnIndex(CreateDatabase.TBL_NHANVIEN_MANV));
+            cursor.moveToNext();
+        }
+        return usernv;
+    }
+
+    public Boolean updatePassword(String username, String password){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("password", password);
+
+        long ktra = database.update(CreateDatabase.TBL_NHANVIEN_TENDN,contentValues,"TBL_NHANVIEN_TENDN = ?",new String[] {username});
+        if (ktra == 1 ) return false;
+        else {
+            return true;
+        }
+    }
+
+
+
     public boolean KtraTonTaiNV(){
         String query = "SELECT * FROM "+CreateDatabase.TBL_NHANVIEN;
         Cursor cursor =database.rawQuery(query,null);

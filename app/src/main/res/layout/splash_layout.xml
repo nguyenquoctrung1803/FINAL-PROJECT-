@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey"
+    android:background="@drawable/wallper"
     tools:context=".Activities.SplashActivity">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_height="392dp"
         android:layout_gravity="center|top"
         android:layout_marginTop="30dp"
-        android:src="@drawable/recoffeeshop" />
+        android:src="@drawable/tta_logo" />
 
     <TextView
         android:id="@+id/txtCoffeeshop"
@@ -23,7 +23,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="@font/orbitron_medium"
         android:gravity="center_horizontal"
-        android:text="Coffee &amp; Tea Sweets"
+        android:text="TTA Coffee &amp; Food"
         android:textColor="@color/black"
         android:textSize="60sp" />
 
