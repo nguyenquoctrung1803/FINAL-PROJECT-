@@ -10,23 +10,22 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="7dp"
-        android:paddingBottom="7dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="48dp"
         android:layout_marginBottom="7dp"
-        >
+        android:background="@drawable/reccroptop"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
         <TextView
             android:id="@+id/txt_customstatistic_MaDon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mã đơn: 1"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            />
+            android:text="Mã đơn: 1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/img_customstatistic_calendar"
@@ -47,7 +46,7 @@
             android:fontFamily="@font/muli"
             android:paddingLeft="5dp"
             android:text="11/11/2021"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
     </RelativeLayout>
@@ -56,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
+        android:background="@drawable/reccropbot"
         >
 
         <TextView

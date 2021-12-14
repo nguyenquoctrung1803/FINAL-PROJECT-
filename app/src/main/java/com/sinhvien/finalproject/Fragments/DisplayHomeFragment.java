@@ -1,10 +1,13 @@
 package com.sinhvien.finalproject.Fragments;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -27,12 +30,15 @@ import com.sinhvien.finalproject.R;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
+import androidx.appcompat.widget.Toolbar;
+
 
 public class DisplayHomeFragment extends Fragment implements View.OnClickListener {
 
     RecyclerView rcv_displayhome_LoaiMon, rcv_displayhome_DonTrongNgay;
     RelativeLayout layout_displayhome_ThongKe,layout_displayhome_XemBan, layout_displayhome_XemMenu, layout_displayhome_XemNV;
-    TextView txt_displayhome_ViewAllCategory, txt_displayhome_ViewAllStatistic;
+    TextView txt_displayhome_ViewAllCategory, txt_displayhome_ViewAllStatistic, txt_displayhome_ThongKe,
+            txt_displayhome_XemBan, txt_displayhome_XemMenu, txt_displayhome_XemNV;
     LoaiMonDAO loaiMonDAO;
     DonDatDAO donDatDAO;
     List<LoaiMonDTO> loaiMonDTOList;
@@ -43,7 +49,7 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.displayhome_layout,container,false);
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Trang chủ");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Danh mục chức năng</font>"));
         setHasOptionsMenu(true);
 
         //region Lấy dối tượng view
@@ -53,6 +59,10 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         layout_displayhome_XemBan = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemBan);
         layout_displayhome_XemMenu = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemMenu);
         layout_displayhome_XemNV = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemNV);
+        txt_displayhome_ThongKe = (TextView) view.findViewById(R.id.txt_displayhome_ThongKe);
+        txt_displayhome_XemBan = (TextView) view.findViewById(R.id.txt_displayhome_XemBan);
+        txt_displayhome_XemMenu = (TextView) view.findViewById(R.id.txt_displayhome_XemMenu);
+        txt_displayhome_XemNV = (TextView) view.findViewById(R.id.txt_displayhome_XemNV);
         txt_displayhome_ViewAllCategory = (TextView) view.findViewById(R.id.txt_displayhome_ViewAllCategory);
         txt_displayhome_ViewAllStatistic = (TextView) view.findViewById(R.id.txt_displayhome_ViewAllStatistic);
         //endregion
@@ -68,6 +78,10 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         layout_displayhome_XemBan.setOnClickListener(this);
         layout_displayhome_XemMenu.setOnClickListener(this);
         layout_displayhome_XemNV.setOnClickListener(this);
+        txt_displayhome_ThongKe.setOnClickListener(this);
+        txt_displayhome_XemBan.setOnClickListener(this);
+        txt_displayhome_XemMenu.setOnClickListener(this);
+        txt_displayhome_XemNV.setOnClickListener(this);
         txt_displayhome_ViewAllCategory.setOnClickListener(this);
         txt_displayhome_ViewAllStatistic.setOnClickListener(this);
 
@@ -104,6 +118,8 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         switch (id){
             case R.id.layout_displayhome_ThongKe:
 
+            case R.id.txt_displayhome_ThongKe:
+
             case R.id.txt_displayhome_ViewAllStatistic:
                 FragmentTransaction tranDisplayStatistic = getActivity().getSupportFragmentManager().beginTransaction();
                 tranDisplayStatistic.replace(R.id.contentView,new DisplayStatisticFragment());
@@ -112,7 +128,7 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
                 navigationView.setCheckedItem(R.id.nav_statistic);
 
                 break;
-
+            case R.id.txt_displayhome_XemBan:
             case R.id.layout_displayhome_XemBan:
                 FragmentTransaction tranDisplayTable = getActivity().getSupportFragmentManager().beginTransaction();
                 tranDisplayTable.replace(R.id.contentView,new DisplayTableFragment());
@@ -122,12 +138,16 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
 
                 break;
 
+            case R.id.txt_displayhome_XemMenu:
+
             case R.id.layout_displayhome_XemMenu:
                 Intent iAddCategory = new Intent(getActivity(), AddCategoryActivity.class);
                 startActivity(iAddCategory);
                 navigationView.setCheckedItem(R.id.nav_category);
 
                 break;
+
+            case R.id.txt_displayhome_XemNV:
             case R.id.layout_displayhome_XemNV:
                 FragmentTransaction tranDisplayStaff= getActivity().getSupportFragmentManager().beginTransaction();
                 tranDisplayStaff.replace(R.id.contentView,new DisplayStaffFragment());

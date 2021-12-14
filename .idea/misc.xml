@@ -3,6 +3,70 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable-v21/rip_dscn.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable-v21/ripp_dscn.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable-v21/rippp.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_airline_seat_legroom_normal_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_bar_chart_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_person_pin_32.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_baseline_storage_24.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ic_launcher_background.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/reccropbot.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/reccroptop.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/rip_dscn.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ripp.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/ripp_dscn.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/rippp.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/rippp_dscn.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/shape.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/shape_dmcn.xml" value="0.16822916666666668" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/shape_press_dmcn.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/drawable/test34.xml" value="0.5" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/font/baloo.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/font/bangers.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/font/muli.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/font/muli_black.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/activity_password.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/activity_repassword.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/addcategory_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/addmenu_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/addstaff_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/addtable_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/amount_menu_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_displaycategory.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_displaymenu.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_displaystaff.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_displaystatistic.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_displaytable.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_layout_paymentmenu.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/custom_title_color.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/detailstatistic_layout.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displaycategory_layout.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displayhome_layout.xml" value="0.25" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displaymenu_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displaystaff_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displaystatistic_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/displaytable_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/edittable_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/home_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/login_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/menu_navigation_header.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/payment_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/register2nd_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/register_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/splash_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/layout/welcome_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/menu/edit_context_menu.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/menu/item_menu.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/menu/main_menu_navigation.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT--main/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.30364583333333334" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/displayhome_layout.xml" value="0.2875" />
         <entry key="app/src/main/res/drawable/circle_drawable.xml" value="0.1814814814814815" />
         <entry key="app/src/main/res/drawable/corner_border_black.xml" value="0.1814814814814815" />
         <entry key="app/src/main/res/drawable/corner_border_primary.xml" value="0.1814814814814815" />
