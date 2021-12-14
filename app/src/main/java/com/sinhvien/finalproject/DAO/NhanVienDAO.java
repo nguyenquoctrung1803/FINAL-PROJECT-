@@ -10,6 +10,7 @@ import com.sinhvien.finalproject.Database.CreateDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observer;
 
 public class NhanVienDAO {
 
@@ -50,6 +51,16 @@ public class NhanVienDAO {
         return ktra;
     }
 
+    public long CapNhapMatKhau(NhanVienDTO nhanVienDTO, int manv){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(CreateDatabase.TBL_NHANVIEN_MATKHAU,nhanVienDTO.getMATKHAU());
+
+        long ktra = database.update(CreateDatabase.TBL_NHANVIEN,contentValues,
+                CreateDatabase.TBL_NHANVIEN_MANV+" = "+manv,null);
+        return ktra;
+    }
+
+
     public int KiemTraDN(String tenDN, String matKhau){
         String query = "SELECT * FROM " +CreateDatabase.TBL_NHANVIEN+ " WHERE "
                 +CreateDatabase.TBL_NHANVIEN_TENDN +" = '"+ tenDN+"' AND "+CreateDatabase.TBL_NHANVIEN_MATKHAU +" = '" +matKhau +"'";
@@ -63,29 +74,22 @@ public class NhanVienDAO {
         return manv;
     }
 
-    public int checkUser(String tenDN) {
+    public int KiemTraUser(String tenDN, String matKhau){
         String query = "SELECT * FROM " +CreateDatabase.TBL_NHANVIEN+ " WHERE "
-                +CreateDatabase.TBL_NHANVIEN_TENDN +" = '"+ tenDN+"";
-        int usernv = 0;
+                +CreateDatabase.TBL_NHANVIEN_TENDN +" = '"+ tenDN+"' AND "+CreateDatabase.TBL_NHANVIEN_MATKHAU +" != '" +matKhau +"'";
+        int manv = 0;
         Cursor cursor = database.rawQuery(query,null);
         cursor.moveToFirst();
-        while (!cursor.isAfterLast()) {
-            usernv = cursor.getInt(cursor.getColumnIndex(CreateDatabase.TBL_NHANVIEN_MANV));
+        while (!cursor.isAfterLast()){
+            manv = cursor.getInt(cursor.getColumnIndex(CreateDatabase.TBL_NHANVIEN_MANV)) ;
             cursor.moveToNext();
         }
-        return usernv;
+        return manv;
     }
 
-    public Boolean updatePassword(String username, String password){
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("password", password);
 
-        long ktra = database.update(CreateDatabase.TBL_NHANVIEN_TENDN,contentValues,"TBL_NHANVIEN_TENDN = ?",new String[] {username});
-        if (ktra == 1 ) return false;
-        else {
-            return true;
-        }
-    }
+
+
 
 
 

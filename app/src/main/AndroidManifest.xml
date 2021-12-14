@@ -11,6 +11,7 @@
         android:theme="@style/Theme.OrderDrinkApp">
         <activity android:name="com.sinhvien.finalproject.Activities.DetailStatisticActivity"></activity>
         <activity android:name="com.sinhvien.finalproject.Activities.AddStaffActivity" />
+        <activity android:name=".Activities.PasswordActivity"/>
         <activity
             android:name="com.sinhvien.finalproject.Activities.EditTableActivity"
             android:label="Sửa bàn ăn"

@@ -20,6 +20,8 @@ public class LoginActivity extends AppCompatActivity {
     Button BTN_login_DangNhap, BTN_login_DangKy, BTN_login_QuenMatKhau;
     TextInputLayout TXTL_login_TenDN, TXTL_login_MatKhau;
     NhanVienDAO nhanVienDAO;
+    private View view;
+    public static final String BUNDLE = "BUNDLE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,12 +69,11 @@ public class LoginActivity extends AppCompatActivity {
         BTN_login_QuenMatKhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(getApplicationContext(), PasswordActivity.class);
+                Intent intent = new Intent(getApplicationContext(),PasswordActivity.class);
                 startActivity(intent);
             }
-        });
 
+        });
     }
 
     //Hàm quay lại màn hình chính
@@ -95,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
     //Hàm chuyển qua trang đăng ký
     public void callRegisterFromLogin(View view)
     {
+        this.view = view;
         Intent intent = new Intent(getApplicationContext(),RegisterActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);

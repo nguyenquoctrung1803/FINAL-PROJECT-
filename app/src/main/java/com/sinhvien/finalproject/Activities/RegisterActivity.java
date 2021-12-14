@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
     //Hàm quay về màn hình trước
     public void backFromRegister(View view){
 
-        Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
+        Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
         Pair[] pairs = new Pair[1];
         pairs[0] = new Pair<View, String>(findViewById(id.layoutRegister),"transition_signup");
 

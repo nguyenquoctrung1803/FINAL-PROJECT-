@@ -32,4 +32,7 @@
     <string name="addcategory">Thêm <br /> loại</string>
     <string name="editcategory">Sửa <br /> loại</string>
     <string name="choseimg">Chọn hình</string>
+    <string name="qu_n_m_t_kh_u">Quên Mật Khẩu</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="todo">TODO</string>
 </resources>
