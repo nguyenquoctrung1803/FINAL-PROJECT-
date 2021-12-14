@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="match_parent"
         android:layout_marginBottom="7dp"
         android:background="@drawable/reccroptop"
         android:paddingTop="7dp"
@@ -53,7 +53,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingBottom="10dp"
         android:background="@drawable/reccropbot"
         >
