@@ -1,5 +1,6 @@
 package com.sinhvien.finalproject.Activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -16,6 +17,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.sinhvien.finalproject.Fragments.DisplayHomeFragment;
 import com.sinhvien.finalproject.Fragments.DisplayCategoryFragment;
@@ -23,6 +25,8 @@ import com.sinhvien.finalproject.Fragments.DisplayStaffFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStatisticFragment;
 import com.sinhvien.finalproject.Fragments.DisplayTableFragment;
 import com.sinhvien.finalproject.R;
+
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     MenuItem selectedFeature, selectedManager;
@@ -33,11 +37,61 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     TextView TXT_menu_tennv;
     int maquyen = 0;
     SharedPreferences sharedPreferences;
+    BottomNavigationView bot_nav;
+    private BottomNavigationView.OnNavigationItemSelectedListener
+            mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()){
+                case R.id.nav_home:
+                    //hiển thị tương ứng trên navigation
+                    FragmentTransaction tranDisplayHome = fragmentManager.beginTransaction();
+                    DisplayHomeFragment displayHomeFragment = new DisplayHomeFragment();
+                    tranDisplayHome.replace(R.id.contentView,displayHomeFragment);
+                    tranDisplayHome.commit();
+                    navigationView.setCheckedItem(item.getItemId());
+                    return true;
+
+                case R.id.nav_statistic:
+                    //hiển thị tương ứng trên navigation
+                    FragmentTransaction tranDisplayStatistic = fragmentManager.beginTransaction();
+                    DisplayStatisticFragment displayStatisticFragment = new DisplayStatisticFragment();
+                    tranDisplayStatistic.replace(R.id.contentView,displayStatisticFragment);
+                    tranDisplayStatistic.commit();
+                    navigationView.setCheckedItem(item.getItemId());
+                    return true;
+
+                case R.id.nav_table:
+                    //hiển thị tương ứng trên navigation
+                    FragmentTransaction tranDisplayTable = fragmentManager.beginTransaction();
+                    DisplayTableFragment displayTableFragment = new DisplayTableFragment();
+                    tranDisplayTable.replace(R.id.contentView,displayTableFragment);
+                    tranDisplayTable.commit();
+                    navigationView.setCheckedItem(item.getItemId());
+                    return true;
+
+                case R.id.nav_category:
+                    //hiển thị tương ứng trên navigation
+                    FragmentTransaction tranDisplayMenu = fragmentManager.beginTransaction();
+                    DisplayCategoryFragment displayCategoryFragment = new DisplayCategoryFragment();
+                    tranDisplayMenu.replace(R.id.contentView, displayCategoryFragment);
+                    tranDisplayMenu.commit();
+                    navigationView.setCheckedItem(item.getItemId());
+                    return true;
+
+            }
+            return false;
+        }
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_layout);
+
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         //region thuộc tính bên view
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -46,6 +100,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         View view = navigationView.getHeaderView(0);
         TXT_menu_tennv = (TextView) view.findViewById(R.id.txt_menu_tennv);
         //endregion
+
+
 
         //xử lý toolbar và navigation
         setSupportActionBar(toolbar); //tạo toolbar
@@ -80,6 +136,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         tranDisplayHome.replace(R.id.contentView, displayHomeFragment);
         tranDisplayHome.commit();
         navigationView.setCheckedItem(R.id.nav_home);
+
+
+
     }
 
     @Override
