@@ -7,19 +7,14 @@
             android:icon="@drawable/ic_baseline_home_24"/>
 
         <item
+            android:id="@+id/nav_staff"
+            android:title="Quản lý"
+            android:icon="@drawable/user_cog_solid"/>
+
+        <item
             android:id="@+id/nav_statistic"
-            android:title="Thống kê"
-            android:icon="@drawable/ic_baseline_bar_chart_24"/>
-
-        <item
-            android:id="@+id/nav_table"
-            android:title="Bàn ăn"
-            android:icon="@drawable/ic_baseline_airline_seat_legroom_normal_24"/>
-        <item
-            android:id="@+id/nav_category"
-            android:title="Thực đơn"
-            android:icon="@drawable/ic_baseline_restaurant_menu_24"/>
-
+            android:title="Thông tin"
+            android:icon="@drawable/ic_baseline_person_24"/>
 
 
 </menu>

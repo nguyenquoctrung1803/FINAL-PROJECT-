@@ -135,7 +135,7 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
                 tranDisplayTable.replace(R.id.contentView,new DisplayTableFragment());
                 tranDisplayTable.addToBackStack(null);
                 tranDisplayTable.commit();
-                navigationView.setCheckedItem(R.id.nav_table);
+//                navigationView.setCheckedItem(R.id.nav_table);
 
                 break;
 
@@ -144,7 +144,7 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
             case R.id.layout_displayhome_XemMenu:
                 Intent iAddCategory = new Intent(getActivity(), AddCategoryActivity.class);
                 startActivity(iAddCategory);
-                navigationView.setCheckedItem(R.id.nav_category);
+//                navigationView.setCheckedItem(R.id.nav_category);
 
                 break;
 
@@ -163,7 +163,7 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
                 tranDisplayCategory.replace(R.id.contentView,new DisplayCategoryFragment());
                 tranDisplayCategory.addToBackStack(null);
                 tranDisplayCategory.commit();
-                navigationView.setCheckedItem(R.id.nav_category);
+//                navigationView.setCheckedItem(R.id.nav_category);
 
                 break;
 

@@ -24,6 +24,7 @@
             <menu>
                 <group>
                     <item android:title="Email"
+                        android:id="@+id/nav_mail"
                         android:icon="@drawable/ic_baseline_email_24"/>
                 </group>
             </menu>
