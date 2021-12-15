@@ -12,7 +12,7 @@
             android:icon="@drawable/user_cog_solid"/>
 
         <item
-            android:id="@+id/nav_statistic"
+            android:id="@+id/nav_information"
             android:title="Thông tin"
             android:icon="@drawable/ic_baseline_person_24"/>
 

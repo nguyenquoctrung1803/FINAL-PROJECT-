@@ -78,11 +78,11 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         layout_displayhome_ThongKe.setOnClickListener(this);
         layout_displayhome_XemBan.setOnClickListener(this);
         layout_displayhome_XemMenu.setOnClickListener(this);
-//        layout_displayhome_XemNV.setOnClickListener(this);
+//      layout_displayhome_XemNV.setOnClickListener(this);
         txt_displayhome_ThongKe.setOnClickListener(this);
         txt_displayhome_XemBan.setOnClickListener(this);
         txt_displayhome_XemMenu.setOnClickListener(this);
-//        txt_displayhome_XemNV.setOnClickListener(this);
+//      txt_displayhome_XemNV.setOnClickListener(this);
         txt_displayhome_ViewAllCategory.setOnClickListener(this);
         txt_displayhome_ViewAllStatistic.setOnClickListener(this);
 
@@ -121,14 +121,14 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
 
             case R.id.txt_displayhome_ThongKe:
 
-            case R.id.txt_displayhome_ViewAllStatistic:
+            /*case R.id.txt_displayhome_ViewAllStatistic:
                 FragmentTransaction tranDisplayStatistic = getActivity().getSupportFragmentManager().beginTransaction();
                 tranDisplayStatistic.replace(R.id.contentView,new DisplayStatisticFragment());
                 tranDisplayStatistic.addToBackStack(null);
                 tranDisplayStatistic.commit();
                 navigationView.setCheckedItem(R.id.nav_statistic);
 
-                break;
+                break;*/
             case R.id.txt_displayhome_XemBan:
             case R.id.layout_displayhome_XemBan:
                 FragmentTransaction tranDisplayTable = getActivity().getSupportFragmentManager().beginTransaction();

@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -22,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     NhanVienDAO nhanVienDAO;
     private View view;
     public static final String BUNDLE = "BUNDLE";
+    private CheckBox CB_SAVE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         BTN_login_DangNhap = (Button)findViewById(R.id.btn_login_DangNhap);
         BTN_login_QuenMatKhau = (Button)findViewById(R.id.btn_login_quenmatkhau);
         BTN_login_DangKy = (Button)findViewById(R.id.btn_login_DangKy);
+        CB_SAVE = (CheckBox)findViewById(R.id.cb_save);
 
         nhanVienDAO = new NhanVienDAO(this);    //khởi tạo kết nối csdl
 
@@ -48,10 +52,12 @@ public class LoginActivity extends AppCompatActivity {
                 String matKhau = TXTL_login_MatKhau.getEditText().getText().toString();
                 int ktra = nhanVienDAO.KiemTraDN(tenDN,matKhau);
                 int maquyen = nhanVienDAO.LayQuyenNV(ktra);
+
+
                 if(ktra != 0){
                     // lưu mã quyền vào shareprefer
-                    SharedPreferences sharedPreferences = getSharedPreferences("luuquyen", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor =sharedPreferences.edit();
+                    SharedPreferences preferences = getSharedPreferences("luuquyen", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor =preferences.edit();
                     editor.putInt("maquyen",maquyen);
                     editor.commit();
 
@@ -67,6 +73,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+
         BTN_login_QuenMatKhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,6 +83,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
         });
+
     }
 
     //Hàm quay lại màn hình chính
