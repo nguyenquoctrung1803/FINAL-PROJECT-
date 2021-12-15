@@ -59,11 +59,11 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         layout_displayhome_ThongKe = (RelativeLayout)view.findViewById(R.id.layout_displayhome_ThongKe);
         layout_displayhome_XemBan = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemBan);
         layout_displayhome_XemMenu = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemMenu);
-        layout_displayhome_XemNV = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemNV);
+//        layout_displayhome_XemNV = (RelativeLayout)view.findViewById(R.id.layout_displayhome_XemNV);
         txt_displayhome_ThongKe = (TextView) view.findViewById(R.id.txt_displayhome_ThongKe);
         txt_displayhome_XemBan = (TextView) view.findViewById(R.id.txt_displayhome_XemBan);
         txt_displayhome_XemMenu = (TextView) view.findViewById(R.id.txt_displayhome_XemMenu);
-        txt_displayhome_XemNV = (TextView) view.findViewById(R.id.txt_displayhome_XemNV);
+//        txt_displayhome_XemNV = (TextView) view.findViewById(R.id.txt_displayhome_XemNV);
         txt_displayhome_ViewAllCategory = (TextView) view.findViewById(R.id.txt_displayhome_ViewAllCategory);
         txt_displayhome_ViewAllStatistic = (TextView) view.findViewById(R.id.txt_displayhome_ViewAllStatistic);
         //endregion
@@ -78,11 +78,11 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
         layout_displayhome_ThongKe.setOnClickListener(this);
         layout_displayhome_XemBan.setOnClickListener(this);
         layout_displayhome_XemMenu.setOnClickListener(this);
-        layout_displayhome_XemNV.setOnClickListener(this);
+//        layout_displayhome_XemNV.setOnClickListener(this);
         txt_displayhome_ThongKe.setOnClickListener(this);
         txt_displayhome_XemBan.setOnClickListener(this);
         txt_displayhome_XemMenu.setOnClickListener(this);
-        txt_displayhome_XemNV.setOnClickListener(this);
+//        txt_displayhome_XemNV.setOnClickListener(this);
         txt_displayhome_ViewAllCategory.setOnClickListener(this);
         txt_displayhome_ViewAllStatistic.setOnClickListener(this);
 
@@ -148,15 +148,15 @@ public class DisplayHomeFragment extends Fragment implements View.OnClickListene
 
                 break;
 
-            case R.id.txt_displayhome_XemNV:
-            case R.id.layout_displayhome_XemNV:
-                FragmentTransaction tranDisplayStaff= getActivity().getSupportFragmentManager().beginTransaction();
-                tranDisplayStaff.replace(R.id.contentView,new DisplayStaffFragment());
-                tranDisplayStaff.addToBackStack(null);
-                tranDisplayStaff.commit();
-                navigationView.setCheckedItem(R.id.nav_staff);
-
-                break;
+//            case R.id.txt_displayhome_XemNV:
+//            case R.id.layout_displayhome_XemNV:
+//                FragmentTransaction tranDisplayStaff= getActivity().getSupportFragmentManager().beginTransaction();
+//                tranDisplayStaff.replace(R.id.contentView,new DisplayStaffFragment());
+//                tranDisplayStaff.addToBackStack(null);
+//                tranDisplayStaff.commit();
+//                navigationView.setCheckedItem(R.id.nav_staff);
+//
+//                break;
 
             case R.id.txt_displayhome_ViewAllCategory:
                 FragmentTransaction tranDisplayCategory = getActivity().getSupportFragmentManager().beginTransaction();

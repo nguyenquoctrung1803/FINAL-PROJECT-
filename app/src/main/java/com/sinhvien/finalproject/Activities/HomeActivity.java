@@ -19,13 +19,19 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.sinhvien.finalproject.DAO.BanAnDAO;
+import com.sinhvien.finalproject.DAO.NhanVienDAO;
+import com.sinhvien.finalproject.DAO.QuyenDAO;
+import com.sinhvien.finalproject.DTO.DonDatDTO;
 import com.sinhvien.finalproject.Fragments.DisplayHomeFragment;
 import com.sinhvien.finalproject.Fragments.DisplayCategoryFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStaffFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStatisticFragment;
 import com.sinhvien.finalproject.Fragments.DisplayTableFragment;
+import com.sinhvien.finalproject.DTO.NhanVienDTO;
 import com.sinhvien.finalproject.R;
 
+import java.util.List;
 
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -34,10 +40,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
     FragmentManager fragmentManager;
-    TextView TXT_menu_tennv;
+    TextView TXT_menu_tennv, TXT_menu_hotennv, txtl_signup_HoVaTen;
     int maquyen = 0;
     SharedPreferences sharedPreferences;
     BottomNavigationView bot_nav;
+    NhanVienDTO nhanvienDTO;
+
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener
             mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -96,11 +106,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //region thuộc tính bên view
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView)findViewById(R.id.navigation_view_trangchu);
-        toolbar = (androidx.appcompat.widget.Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         View view = navigationView.getHeaderView(0);
         TXT_menu_tennv = (TextView) view.findViewById(R.id.txt_menu_tennv);
+        TXT_menu_hotennv = (TextView) view.findViewById(R.id.txt_menu_hotennv);
         //endregion
-
 
 
         //xử lý toolbar và navigation
@@ -123,7 +133,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //Tụ động gán tên nv đăng nhập qua Extras
         Intent intent = getIntent();
         String tendn = intent.getStringExtra("tendn");
-        TXT_menu_tennv.setText( "Xin chào " + tendn +" !!");
+        TXT_menu_tennv.setText("@"+tendn);
+
+
+        intent.putExtra("hoten", TXT_menu_hotennv.getText().toString());
+        intent = getIntent();
+        String hoten = intent.getStringExtra("hoten");
+        TXT_menu_hotennv.setText("1"+hoten);
+
 
         //lấy file share prefer
         sharedPreferences = getSharedPreferences("luuquyen", Context.MODE_PRIVATE);

@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                     //gửi dữ liệu user qua trang chủ
                     Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
                     intent.putExtra("tendn",TXTL_login_TenDN.getEditText().getText().toString());
+                    intent.putExtra("matkhau",TXTL_login_MatKhau.getEditText().getText().toString());
                     intent.putExtra("manv",ktra);
                     startActivity(intent);
                 }else {

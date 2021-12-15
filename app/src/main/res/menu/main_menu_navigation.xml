@@ -3,47 +3,30 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:title="Trang chủ"
-            android:icon="@drawable/ic_baseline_home_24"/>
+            android:id="@+id/nav_staff"
+            android:title="Quản lý nhân viên"
+            android:icon="@drawable/ic_baseline_person_24"/>
 
-        <item
-            android:id="@+id/nav_statistic"
-            android:title="Thống kê"
-            android:icon="@drawable/ic_baseline_bar_chart_24"/>
-
-        <item android:title="Quản lý">
+        <item android:title="Giới thiệu">
             <menu>
-                <group android:checkableBehavior="single">
-                    <item
-                        android:id="@+id/nav_table"
-                        android:title="Bàn ăn"
-                        android:icon="@drawable/ic_baseline_airline_seat_legroom_normal_24"/>
-                    <item
-                        android:id="@+id/nav_category"
-                        android:title="Thực đơn"
-                        android:icon="@drawable/ic_baseline_restaurant_menu_24"/>
-
-                    <item
-                        android:id="@+id/nav_staff"
-                        android:title="Nhân viên"
-                        android:icon="@drawable/ic_baseline_person_24"/>
+                <group>
+                    <item android:title="Sinh nhật"
+                        android:icon="@drawable/ic_baseline_event_24"/>
+                    <item android:title="Giới tính"
+                        android:icon="@drawable/ic_baseline_wc_24"/>
+                    <item android:title="Đang hoạt động"
+                        android:icon="@drawable/ic_baseline_update_24"/>
                 </group>
             </menu>
         </item>
 
-        <item android:title="Communicate">
+        <item android:title="Thông tin liên hệ">
             <menu>
-                <item  android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_baseline_share_24"
-                    android:title="Share" />
-                <item android:id="@+id/nav_send"
-                    android:icon="@drawable/ic_baseline_send_24"
-                    android:title="Send"/>
-
+                <group>
+                    <item android:title="Email"
+                        android:icon="@drawable/ic_baseline_email_24"/>
+                </group>
             </menu>
-
-
         </item>
 
         <item
