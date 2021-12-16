@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_person_pin_32.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_storage_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/ic_baseline_update_24.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/shape_dmcn.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/drawable/shape_press_dmcn.xml" value="0.25277777777777777" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/layout/custom_layout_displaystaff.xml" value="0.259375" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/OrderDrinkApp/app/src/main/res/layout/displayinformation_layout.xml" value="0.259375" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.30364583333333334" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/Information.xml" value="0.2994791666666667" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/addcategory_layout.xml" value="0.2875" />

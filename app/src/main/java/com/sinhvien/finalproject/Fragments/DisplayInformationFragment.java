@@ -17,14 +17,18 @@ import androidx.fragment.app.FragmentManager;
 import com.sinhvien.finalproject.Activities.HomeActivity;
 import com.sinhvien.finalproject.Activities.WelcomeActivity;
 import com.sinhvien.finalproject.DAO.NhanVienDAO;
+import com.sinhvien.finalproject.DAO.QuyenDAO;
 import com.sinhvien.finalproject.DTO.NhanVienDTO;
+import com.sinhvien.finalproject.DTO.QuyenDTO;
 import com.sinhvien.finalproject.R;
 
 public class DisplayInformationFragment extends Fragment {
-    TextView i4_Hoten, i4_Birth, i4_Gender, i4_Email, i4_Phonenum, i4_Logout;
+    TextView i4_Hoten, i4_Birth, i4_Gender, i4_Email, i4_Phonenum, i4_Logout, i4_ChucVu;
     FragmentManager fragmentManager;
     NhanVienDAO nhanVienDAO;
     int manv;
+    QuyenDAO quyenDAO;
+
 
     @Nullable
     @Override
@@ -39,15 +43,19 @@ public class DisplayInformationFragment extends Fragment {
         i4_Email = view.findViewById(R.id.i4_mail);
         i4_Phonenum = view.findViewById(R.id.i4_phonenum);
         i4_Logout = view.findViewById(R.id.i4_logout);
+        i4_ChucVu = view.findViewById(R.id.i4_chucvu);
 
 
         nhanVienDAO = new NhanVienDAO(getActivity());
+        quyenDAO = new QuyenDAO(getActivity());
         Intent intent = getActivity().getIntent();
         manv = intent.getIntExtra("manv",0);
         NhanVienDTO nhanVienDTO = nhanVienDAO.LayNVTheoMa(manv);
+        String tenQuyen = quyenDAO.LayTenQuyenTheoMa(manv);
         i4_Hoten.setText(nhanVienDTO.getHOTENNV());
         i4_Birth.setText(nhanVienDTO.getNGAYSINH());
         i4_Gender.setText(nhanVienDTO.getGIOITINH());
+        i4_ChucVu.setText(tenQuyen);
         i4_Email.setText(nhanVienDTO.getEMAIL());
         i4_Phonenum.setText(nhanVienDTO.getSDT());
         i4_Logout.setOnClickListener(new View.OnClickListener() {
@@ -58,9 +66,10 @@ public class DisplayInformationFragment extends Fragment {
             }
         });
 
+
+
         return  view;
     }
-
 
 
 }
