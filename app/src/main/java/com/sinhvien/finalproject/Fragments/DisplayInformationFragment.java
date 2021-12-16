@@ -20,7 +20,7 @@ import com.sinhvien.finalproject.DAO.NhanVienDAO;
 import com.sinhvien.finalproject.DTO.NhanVienDTO;
 import com.sinhvien.finalproject.R;
 
-public class InformationFragment extends Fragment {
+public class DisplayInformationFragment extends Fragment {
     TextView i4_Hoten, i4_Birth, i4_Gender, i4_Email, i4_Phonenum, i4_Logout;
     FragmentManager fragmentManager;
     NhanVienDAO nhanVienDAO;
@@ -57,7 +57,7 @@ public class InformationFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        
+
         return  view;
     }
 

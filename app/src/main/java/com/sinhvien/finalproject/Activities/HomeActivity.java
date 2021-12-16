@@ -8,7 +8,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -20,18 +19,11 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
-import com.sinhvien.finalproject.DAO.BanAnDAO;
 import com.sinhvien.finalproject.DAO.NhanVienDAO;
-import com.sinhvien.finalproject.DAO.QuyenDAO;
-import com.sinhvien.finalproject.DTO.DonDatDTO;
 import com.sinhvien.finalproject.DTO.ThanhToanDTO;
 import com.sinhvien.finalproject.Fragments.DisplayHomeFragment;
-import com.sinhvien.finalproject.Fragments.DisplayCategoryFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStaffFragment;
-import com.sinhvien.finalproject.Fragments.InformationFragment;
-import com.sinhvien.finalproject.Fragments.DisplayStatisticFragment;
-import com.sinhvien.finalproject.Fragments.DisplayTableFragment;
-import com.sinhvien.finalproject.DTO.NhanVienDTO;
+import com.sinhvien.finalproject.Fragments.DisplayInformationFragment;
 import com.sinhvien.finalproject.R;
 
 import java.util.List;
@@ -83,8 +75,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 case R.id.nav_information:
                     //hiển thị tương ứng trên navigation
                     FragmentTransaction tranDisplayStatistic = fragmentManager.beginTransaction();
-                    InformationFragment informationFragment = new InformationFragment();
-                    tranDisplayStatistic.replace(R.id.contentView,informationFragment);
+                    DisplayInformationFragment displayInformationFragment = new DisplayInformationFragment();
+                    tranDisplayStatistic.replace(R.id.contentView, displayInformationFragment);
                     tranDisplayStatistic.commit();
                     navigationView.setCheckedItem(item.getItemId());
                     return true;
