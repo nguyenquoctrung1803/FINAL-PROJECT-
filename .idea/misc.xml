@@ -14,6 +14,8 @@
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/custom_layout_displaytable.xml" value="0.2875" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/custom_layout_paymentmenu.xml" value="0.2875" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/detailstatistic_layout.xml" value="0.2875" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/displayhome_layout.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/displayinformation_layout.xml" value="0.33" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/displaytable_layout.xml" value="0.2875" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/edittable_layout.xml" value="0.2875" />
         <entry key="..\:/Users/letam/AndroidStudioProjects/FINAL-PROJECT-/app/src/main/res/layout/home_layout.xml" value="0.18885869565217392" />
@@ -27,5 +29,5 @@
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

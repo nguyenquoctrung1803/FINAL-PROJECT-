@@ -27,8 +27,8 @@ import com.sinhvien.finalproject.DTO.DonDatDTO;
 import com.sinhvien.finalproject.DTO.ThanhToanDTO;
 import com.sinhvien.finalproject.Fragments.DisplayHomeFragment;
 import com.sinhvien.finalproject.Fragments.DisplayCategoryFragment;
-import com.sinhvien.finalproject.Fragments.DisplayInformationFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStaffFragment;
+import com.sinhvien.finalproject.Fragments.InformationFragment;
 import com.sinhvien.finalproject.Fragments.DisplayStatisticFragment;
 import com.sinhvien.finalproject.Fragments.DisplayTableFragment;
 import com.sinhvien.finalproject.DTO.NhanVienDTO;
@@ -82,10 +82,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                 case R.id.nav_information:
                     //hiển thị tương ứng trên navigation
-                    FragmentTransaction tranDisplayInformation = fragmentManager.beginTransaction();
-                    DisplayInformationFragment displayInformationFragment = new DisplayInformationFragment();
-                    tranDisplayInformation.replace(R.id.contentView,displayInformationFragment);
-                    tranDisplayInformation.commit();
+                    FragmentTransaction tranDisplayStatistic = fragmentManager.beginTransaction();
+                    InformationFragment informationFragment = new InformationFragment();
+                    tranDisplayStatistic.replace(R.id.contentView,informationFragment);
+                    tranDisplayStatistic.commit();
                     navigationView.setCheckedItem(item.getItemId());
                     return true;
             }
@@ -129,20 +129,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         drawerToggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        //Tụ động gán tên nv đăng nhập qua Extras
-//        Intent intent = getIntent();
-//        String tendn = intent.getStringExtra("tendn");
-//        TXT_menu_tennv.setText("@"+tendn);
-
-
-        nhanVienDAO = new NhanVienDAO(this);
-        Intent intent = getIntent();
-        manv = intent.getIntExtra("manv",0);
-        NhanVienDTO nhanVienDTO = nhanVienDAO.LayNVTheoMa(manv);
-        TXT_menu_hotennv.setText(nhanVienDTO.getHOTENNV());
-        TXT_menu_tennv.setText(nhanVienDTO.getEMAIL());
-
-
 
         //lấy file share prefer
         sharedPreferences = getSharedPreferences("luuquyen", Context.MODE_PRIVATE);
@@ -164,6 +150,61 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id){
+            case R.id.nav_home:
+                //hiển thị tương ứng trên navigation
+                FragmentTransaction tranDisplayHome = fragmentManager.beginTransaction();
+                DisplayHomeFragment displayHomeFragment = new DisplayHomeFragment();
+                tranDisplayHome.replace(R.id.contentView,displayHomeFragment);
+                tranDisplayHome.commit();
+                navigationView.setCheckedItem(item.getItemId());
+                drawerLayout.closeDrawers();
+                break;
+
+//            case R.id.nav_statistic:
+//                //hiển thị tương ứng trên navigation
+//                FragmentTransaction tranDisplayStatistic = fragmentManager.beginTransaction();
+//                DisplayStatisticFragment displayStatisticFragment = new DisplayStatisticFragment();
+//                tranDisplayStatistic.replace(R.id.contentView,displayStatisticFragment);
+//                tranDisplayStatistic.commit();
+//                navigationView.setCheckedItem(item.getItemId());
+//                drawerLayout.closeDrawers();
+//                break;
+
+//            case R.id.nav_table:
+//                //hiển thị tương ứng trên navigation
+//                FragmentTransaction tranDisplayTable = fragmentManager.beginTransaction();
+//                DisplayTableFragment displayTableFragment = new DisplayTableFragment();
+//                tranDisplayTable.replace(R.id.contentView,displayTableFragment);
+//                tranDisplayTable.commit();
+//                navigationView.setCheckedItem(item.getItemId());
+//                drawerLayout.closeDrawers();
+//                break;
+//
+//            case R.id.nav_category:
+//                //hiển thị tương ứng trên navigation
+//                FragmentTransaction tranDisplayMenu = fragmentManager.beginTransaction();
+//                DisplayCategoryFragment displayCategoryFragment = new DisplayCategoryFragment();
+//                tranDisplayMenu.replace(R.id.contentView, displayCategoryFragment);
+//                tranDisplayMenu.commit();
+//                navigationView.setCheckedItem(item.getItemId());
+//                drawerLayout.closeDrawers();
+//
+//                break;
+
+            case R.id.nav_staff:
+                if(maquyen == 1){
+                    //hiển thị tương ứng trên navigation
+                    FragmentTransaction tranDisplayStaff = fragmentManager.beginTransaction();
+                    DisplayStaffFragment displayStaffFragment = new DisplayStaffFragment();
+                    tranDisplayStaff.replace(R.id.contentView,displayStaffFragment);
+                    tranDisplayStaff.commit();
+                    navigationView.setCheckedItem(item.getItemId());
+                    drawerLayout.closeDrawers();
+                }else {
+                    Toast.makeText(getApplicationContext(),"Bạn không có quyền truy cập",Toast.LENGTH_SHORT).show();
+                }
+
+                break;
 
             case R.id.nav_logout:
                 //gọi activity ra trang welcome
