@@ -35,4 +35,14 @@
     <string name="qu_n_m_t_kh_u">Quên Mật Khẩu</string>
     <string name="reset_password">Reset Password</string>
     <string name="todo">TODO</string>
+
+    <string name="first_slide_heading">asdasdsad</string>
+    <string name="second_slide_heading">asdasdasdasd</string>
+    <string name="third_slide_heading">asdasdasd</string>
+    <string name="fourth_slide_heading">asdasdasd</string>
+
+    <string name="first_slide_desc">fxzfzxfz</string>
+    <string name="second_slide_desc">fxzfzxfz</string>
+    <string name="third_slide_desc">fxzfzxfz</string>
+    <string name="fourth_slide_desc">fxzfzxfz</string>
 </resources>

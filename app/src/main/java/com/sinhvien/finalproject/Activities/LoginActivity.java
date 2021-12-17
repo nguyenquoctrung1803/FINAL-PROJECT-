@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         TXTL_login_MatKhau = (TextInputLayout)findViewById(R.id.txtl_login_MatKhau);
         BTN_login_DangNhap = (Button)findViewById(R.id.btn_login_DangNhap);
         BTN_login_QuenMatKhau = (Button)findViewById(R.id.btn_login_quenmatkhau);
-        BTN_login_DangKy = (Button)findViewById(R.id.btn_login_DangKy);
+
 
         nhanVienDAO = new NhanVienDAO(this);    //khởi tạo kết nối csdl
 

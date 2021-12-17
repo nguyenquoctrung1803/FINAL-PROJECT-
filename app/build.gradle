@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.sinhvien.orderdrinkapp"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -39,7 +39,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-
-
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'me.relex:circleindicator:1.2.1@aar'
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.3'
 }
