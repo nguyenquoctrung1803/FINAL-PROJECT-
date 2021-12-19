@@ -52,7 +52,8 @@ public class DisplayInformationFragment extends Fragment {
         Intent intent = getActivity().getIntent();
         manv = intent.getIntExtra("manv",0);
         NhanVienDTO nhanVienDTO = nhanVienDAO.LayNVTheoMa(manv);
-        String tenQuyen = quyenDAO.LayTenQuyenTheoMa(manv);
+        int maQuyen = nhanVienDAO.LayQuyenNV(manv);
+        String tenQuyen = quyenDAO.LayTenQuyenTheoMa(maQuyen);
         i4_Hoten.setText(nhanVienDTO.getHOTENNV());
         i4_Birth.setText(nhanVienDTO.getNGAYSINH());
         i4_Gender.setText(nhanVienDTO.getGIOITINH());
