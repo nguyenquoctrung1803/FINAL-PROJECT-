@@ -2,6 +2,7 @@ package com.sinhvien.finalproject.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ public class DisplayStatisticFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.displaystatistic_layout,container,false);
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Quản lý thống kê");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Thống kê</font>"));
         setHasOptionsMenu(true);
 
         lvStatistic = (ListView)view.findViewById(R.id.lvStatistic);

@@ -3,6 +3,7 @@ package com.sinhvien.finalproject.Fragments;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -75,7 +76,7 @@ public class DisplayMenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.displaymenu_layout,container,false);
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Quản lý thực đơn");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Quản lý thực đơn</font>"));
         monDAO = new MonDAO(getActivity());
 
         gvDisplayMenu = (GridView)view.findViewById(R.id.gvDisplayMenu);

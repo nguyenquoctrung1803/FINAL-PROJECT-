@@ -2,6 +2,7 @@ package com.sinhvien.finalproject.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,7 @@ public class DisplayInformationFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.displayinformation_layout,container,false);
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Thông tin");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Thông tin</font>"));
         setHasOptionsMenu(false);
 
         i4_Hoten = view.findViewById(R.id.i4_hoten);

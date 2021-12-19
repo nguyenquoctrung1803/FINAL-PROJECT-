@@ -21,7 +21,7 @@
         android:layout_height="120dp"
         android:src="@drawable/ic_baseline_event_seat_40"
         android:layout_below="@+id/txt_customtable_TenBanAn"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/shape_button"
         />
     <ImageView
         android:id="@+id/img_customtable_GoiMon"

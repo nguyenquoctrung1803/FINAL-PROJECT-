@@ -3,6 +3,7 @@ package com.sinhvien.finalproject.Fragments;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -75,7 +76,7 @@ public class DisplayCategoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.displaycategory_layout,container,false);
         setHasOptionsMenu(true);
-        ((HomeActivity)getActivity()).getSupportActionBar().setTitle("Quản lý thực đơn");
+        ((HomeActivity)getActivity()).getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>Quản lý thực đơn</font>"));
 
         gvCategory = (GridView)view.findViewById(R.id.gvCategory);
 
