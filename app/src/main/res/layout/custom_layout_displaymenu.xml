@@ -44,7 +44,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/img_custommenu_HinhMon"
-        android:background="@color/colorPrimary"
+        android:background="#3d1d0d"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         >
@@ -57,8 +57,8 @@
             android:textStyle="bold"
             android:padding="3dp"
             android:layout_centerInParent="true"
-            android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             />
 
     </RelativeLayout>

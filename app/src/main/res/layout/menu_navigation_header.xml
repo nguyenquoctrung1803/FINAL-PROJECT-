@@ -6,41 +6,17 @@
     android:id="@+id/menu_header"
     >
 
-<!--    <ImageView-->
-<!--        android:layout_width="100dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_alignParentRight="true"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_marginRight="15dp"-->
-<!--        android:src="@drawable/coffee_icon4" />-->
-    <ImageView
-        android:layout_width="94dp"
-        android:layout_height="81dp"
-        android:layout_alignParentBottom="true"
-        android:paddingBottom="10dp"
-        android:src="@drawable/ic_baseline_account_circle_24" />
-
-    <TextView
-        android:id="@+id/txt_menu_hotennv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:paddingLeft="90dp"
-        android:paddingBottom="45dp"
-        android:text="Xin chào !!"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/txt_menu_tennv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:paddingLeft="85dp"
-        android:paddingBottom="20dp"
-        android:text="Xin chào !!"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text="Credit"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="35sp" />
 
     <!--    <TextView-->
 <!--        android:id="@+id/menu_slogan"-->

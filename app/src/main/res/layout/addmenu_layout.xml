@@ -25,7 +25,7 @@
         android:textSize="36sp"
         android:textStyle="bold"
         android:fontFamily="@font/muli_black"
-        android:textColor="@color/black"
+        android:textColor="#3d1d0d"
         android:textAllCaps="true"
         android:layout_marginTop="15dp"
         />
@@ -162,24 +162,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:background="@color/black"
-            android:backgroundTint="@color/black"
+            android:background="@drawable/shape_button"
             android:elevation="5dp"
             android:text="Thêm món"
             android:textColor="@color/white"
-            app:backgroundTint="@color/black"
             />
     </LinearLayout>
 
 </LinearLayout>
 
-<!--<Spinner-->
-<!--android:id="@+id/spn_addmenu_themloai"-->
-<!--android:layout_width="wrap_content"-->
-<!--android:layout_height="wrap_content"-->
-<!--android:layout_alignParentLeft="true"-->
-<!--android:layout_toStartOf="@id/btnimg_addmenu_nutthemloai"-->
-<!--android:layout_toLeftOf="@id/btnimg_addmenu_nutthemloai"-->
-<!--android:layout_centerInParent="true"-->
-<!--    >-->
-<!--</Spinner>-->

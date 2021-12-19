@@ -100,7 +100,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         View view = navigationView.getHeaderView(0);
         TXT_menu_tennv = (TextView) view.findViewById(R.id.txt_menu_tennv);
-        TXT_menu_hotennv = (TextView) view.findViewById(R.id.txt_menu_hotennv);
         //endregion
 
 
@@ -198,11 +197,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
 
-            case R.id.nav_logout:
-                //gọi activity ra trang welcome
-                Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.nav_logout:
+//                //gọi activity ra trang welcome
+//                Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
+//                startActivity(intent);
+//                break;
         }
 
         return false;

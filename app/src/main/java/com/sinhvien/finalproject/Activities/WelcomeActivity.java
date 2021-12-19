@@ -21,7 +21,6 @@ import com.sinhvien.finalproject.R;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import me.relex.circleindicator.CircleIndicator;
 
 public class WelcomeActivity extends AppCompatActivity{
 
