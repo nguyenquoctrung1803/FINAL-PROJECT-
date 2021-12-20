@@ -1,12 +1,11 @@
 <resources>
     <string name="app_name">OrderDrinkApp</string>
-    <string name="brand_name">:re Coffee Shop </string>
+    <string name="brand_name">TTA Coffee Food </string>
     <string name="slogan">Thơm ngon đến từng giọt cuối cùng</string>
     <string name="login">Đăng nhập</string>
     <string name="logintittle">Đăng <br /> nhập</string>
     <string name="register">Đăng ký</string>
     <string name="function">Quản lý</string>
-    <string name="howwork">Hướng dẫn sử dụng</string>
     <string name="create_acc">Tạo <br /> tài khoản</string>
     <string name="enter_fullname">Họ và tên</string>
     <string name="enter_username">Tên tài khoản</string>
@@ -35,14 +34,4 @@
     <string name="qu_n_m_t_kh_u">Quên Mật Khẩu</string>
     <string name="reset_password">Reset Password</string>
     <string name="todo">TODO</string>
-
-    <string name="first_slide_heading">asdasdsad</string>
-    <string name="second_slide_heading">asdasdasdasd</string>
-    <string name="third_slide_heading">asdasdasd</string>
-    <string name="fourth_slide_heading">asdasdasd</string>
-
-    <string name="first_slide_desc">fxzfzxfz</string>
-    <string name="second_slide_desc">fxzfzxfz</string>
-    <string name="third_slide_desc">fxzfzxfz</string>
-    <string name="fourth_slide_desc">fxzfzxfz</string>
 </resources>
